@@ -87,7 +87,7 @@ public class TestClass {
             Bank.printStatement(accountNum);
         } catch (InputMismatchException e) {
             System.out.println("Invalid input. Please enter a valid integer account number.");
-            scan.nextLine(); // Clear scanner buffer
+            scan.nextLine();
         }
     }
     public static void depositFunds(){
@@ -109,7 +109,7 @@ public class TestClass {
             Bank.deposit(accountNum, amount, debitOrCredit);
         } catch (InputMismatchException e) {
             System.out.println("Invalid input. Please enter a valid debit or credit value.");
-            scan.nextLine(); // Clear scanner buffer
+            scan.nextLine();
         }
     }
     public static void withdrawFunds(){
@@ -131,7 +131,7 @@ public class TestClass {
             Bank.withdraw(accountNum, amount, debitOrCredit);
         } catch (InputMismatchException e) {
             System.out.println("Invalid input. Please enter a valid debit or credit value.");
-            scan.nextLine(); // Clear scanner buffer
+            scan.nextLine();
         }
     }
     public static void closeAccount(){
