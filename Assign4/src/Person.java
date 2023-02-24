@@ -1,3 +1,4 @@
+//Erick Zagal (ezagal2@toromail.csudh.edu)
 public class Person {
     //Fields
     private String firstName;

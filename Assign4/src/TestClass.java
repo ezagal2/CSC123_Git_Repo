@@ -1,3 +1,4 @@
+//Erick Zagal (ezagal2@toromail.csudh.edu)
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

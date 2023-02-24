@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="added .idea/workspace.xml to .gitignore">
-      <change afterPath="$PROJECT_DIR$/Assign5/Assign5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="completed Asssignment">
       <change beforePath="$PROJECT_DIR$/Assign4/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assign4/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Bank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assign4/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Person.java" afterDir="false" />
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677127404465</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="completed Asssignment">
+      <created>1677227519731</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677227519731</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +192,7 @@
     <MESSAGE value="added stuff to .gitignore" />
     <MESSAGE value="necessary ignored files" />
     <MESSAGE value="added .idea/workspace.xml to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .idea/workspace.xml to .gitignore" />
+    <MESSAGE value="completed Asssignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed Asssignment" />
   </component>
 </project>
