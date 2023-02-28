@@ -26,20 +26,20 @@ public class Bank {
         }
         return null;
      }
-    public static void deposit(int accountNumber, double amount, String debitOrCredit) {
+    public static void deposit(int accountNumber, double amount) {
         Account account = findAccount(accountNumber);
         if (account == null) {
             System.out.println("Account not found");
         } else {
-            account.deposit(amount, debitOrCredit);
+            account.deposit(amount);
         }
     }
-    public static void withdraw(int accountNumber, double amount, String debitOrCredit) {
+    public static void withdraw(int accountNumber, double amount) {
         Account account = findAccount(accountNumber);
         if (account == null) {
             System.out.println("Account not found");
         } else {
-            account.withdraw(amount, debitOrCredit);
+            account.withdraw(amount);
         }
     }
     public static void closeAccount(int accountNumber) {

@@ -21,24 +21,24 @@ public class Account {
         this.overdraftLimit = overdraftLimit;
         accountOpen=true;
     }
-    public void withdraw(double amount, String debitOrCredit) {
+    public void withdraw(double amount) {
         if (isOpen() && ((type.equals("Savings") && this.balance - amount < 0) || (this.balance - amount < 0 &&
                 this.balance - amount < overdraftLimit * -1)) || amount < 0) {
             System.out.printf("Withdrawal failed, the balance is: %.2f\n", balance);
         } else if (isOpen()) {
             this.balance = this.balance - amount;
-            transaction = String.format("%d : %s : -%.2f", transactionId++, debitOrCredit, amount);
+            transaction = String.format("%d : Debit : -%.2f", transactionId++, amount);
             transactions.add(transaction);
             System.out.printf("Withdrawal successful, the balance is: %.2f\n", balance);
         } else {
             System.out.printf("Withdrawal failed, the balance is: %.2f\n", balance);
         }
     }
-    public void deposit(double amount, String debitOrCredit) {
+    public void deposit(double amount) {
         if(amount<0 || !isOpen()) System.out.printf("Deposit failed, the balance is: %.2f\n", balance);
         else {
             this.balance = this.balance + amount;
-            transaction = String.format("%d : %s : +%.2f", transactionId++, debitOrCredit, amount);
+            transaction = String.format("%d : Credit : +%.2f", transactionId++, amount);
             transactions.add(transaction);
             System.out.printf("Deposit successful, the new balance is: %.2f\n", balance);
         }

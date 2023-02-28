@@ -93,46 +93,25 @@ public class TestClass {
     public static void depositFunds(){
         int accountNum;
         double amount;
-        String debitOrCredit;
         scan.nextLine();
-        try {
-            System.out.print("Enter account number: ");
-            accountNum = scan.nextInt();
-            scan.nextLine();
-            System.out.print("Debit or Credit?: ");
-            debitOrCredit = scan.nextLine();
-            if (!debitOrCredit.equals("Debit") && !debitOrCredit.equals("Credit")) {
-                throw new InputMismatchException();
-            }
-            System.out.print("Enter the amount to deposit: ");
-            amount = scan.nextDouble();
-            Bank.deposit(accountNum, amount, debitOrCredit);
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input. Please enter a valid debit or credit value.");
-            scan.nextLine();
-        }
+        System.out.print("Enter account number: ");
+        accountNum = scan.nextInt();
+        scan.nextLine();
+        System.out.print("Enter the amount to deposit: ");
+        amount = scan.nextDouble();
+        Bank.deposit(accountNum, amount);
+
     }
     public static void withdrawFunds(){
         int accountNum;
         double amount;
-        String debitOrCredit;
         scan.nextLine();
-        try {
-            System.out.print("Enter account number: ");
-            accountNum = scan.nextInt();
-            scan.nextLine();
-            System.out.print("Debit or Credit?: ");
-            debitOrCredit = scan.nextLine();
-            if (!debitOrCredit.equals("Debit") && !debitOrCredit.equals("Credit")) {
-                throw new InputMismatchException();
-            }
-            System.out.print("Enter the amount to withdraw: ");
-            amount = scan.nextDouble();
-            Bank.withdraw(accountNum, amount, debitOrCredit);
-        } catch (InputMismatchException e) {
-            System.out.println("Invalid input. Please enter a valid debit or credit value.");
-            scan.nextLine();
-        }
+        System.out.print("Enter account number: ");
+        accountNum = scan.nextInt();
+        scan.nextLine();
+        System.out.print("Enter the amount to withdraw: ");
+        amount = scan.nextDouble();
+        Bank.withdraw(accountNum, amount);
     }
     public static void closeAccount(){
         int accountNum;

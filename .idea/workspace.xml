@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="completed Asssignment">
+    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="removed comments">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assign4/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assign4/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assign4/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assign4/src/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -123,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677227519731</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added credentials on top">
+      <created>1677227756129</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677227756129</updated>
+    </task>
+    <task id="LOCAL-00011" summary="removed comments">
+      <created>1677227879125</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677227879125</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +208,8 @@
     <MESSAGE value="necessary ignored files" />
     <MESSAGE value="added .idea/workspace.xml to .gitignore" />
     <MESSAGE value="completed Asssignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed Asssignment" />
+    <MESSAGE value="added credentials on top" />
+    <MESSAGE value="removed comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed comments" />
   </component>
 </project>
