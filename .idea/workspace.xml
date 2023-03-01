@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="removed comments">
+    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="Corrected Assignment">
+      <change afterPath="$PROJECT_DIR$/Lab6a/Lab6a.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab6a/src/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab6a/src/IntegerA_FloatB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assign4/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assign4/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assign4/src/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assign4/src/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677227879125</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Corrected Assignment">
+      <created>1677554092951</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677554092951</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +218,7 @@
     <MESSAGE value="completed Asssignment" />
     <MESSAGE value="added credentials on top" />
     <MESSAGE value="removed comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed comments" />
+    <MESSAGE value="Corrected Assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Assignment" />
   </component>
 </project>
