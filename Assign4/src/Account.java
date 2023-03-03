@@ -25,7 +25,8 @@ public class Account {
         if (isOpen() && ((type.equals("Savings") && this.balance - amount < 0) || (this.balance - amount < 0 &&
                 this.balance - amount < overdraftLimit * -1)) || amount < 0) {
             System.out.printf("Withdrawal failed, the balance is: %.2f\n", balance);
-        } else if (isOpen()) {
+        } else if (isOpen() || (!isOpen() && !(this.balance - amount < 0 &&
+                this.balance - amount < overdraftLimit * -1))) {
             this.balance = this.balance - amount;
             transaction = String.format("%d : Debit : -%.2f", transactionId++, amount);
             transactions.add(transaction);
