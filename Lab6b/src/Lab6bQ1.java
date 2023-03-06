@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 
-public class MakeDirectoriesAndFile {
+public class Lab6bQ1 {
 
     public static void main(String[] args) {
 
