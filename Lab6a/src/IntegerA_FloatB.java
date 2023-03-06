@@ -13,7 +13,7 @@ public class IntegerA_FloatB {
             double b = scan.nextDouble();
             System.out.println(a/b);
         }catch (InputMismatchException e) {
-            System.out.println("Error! enter an Integer");
+            System.out.println("Error! enter an integer or double");
         }
     }
 }
