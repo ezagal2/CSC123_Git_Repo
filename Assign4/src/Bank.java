@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Bank {
     private static ArrayList<Account> accounts=new ArrayList<>();
-    private static int accountNumbers=100;
+    private static int accountNumber =100;
     private Bank() {}
     public static Account openAccount(String firstName, String lastName, String SSN, String accountType) {
         return openAccount(firstName, lastName, SSN, accountType, 0);
@@ -11,7 +11,7 @@ public class Bank {
     public static Account openAccount(String firstName, String lastName, String SSN, String accountType,
                                       double overdraftLimit) {
         Person customer = new Person(firstName, lastName, SSN);
-        Account account = new Account(accountNumbers++, accountType, customer, overdraftLimit);
+        Account account = new Account(accountNumber++, accountType, customer, overdraftLimit);
         accounts.add(account);
         return account;
     }
