@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="fixed withdrawl ability after closing an account">
+    <list default="true" id="e106e026-d2a2-47be-9e64-d4c9e453f228" name="Changes" comment="changed accountNumbers from plural to singular">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677819249439</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="changed accountNumbers from plural to singular">
+      <created>1678155942826</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678155942826</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +237,7 @@
     <MESSAGE value="Removed the credit or debit input" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="fixed withdrawl ability after closing an account" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed withdrawl ability after closing an account" />
+    <MESSAGE value="changed accountNumbers from plural to singular" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed accountNumbers from plural to singular" />
   </component>
 </project>
