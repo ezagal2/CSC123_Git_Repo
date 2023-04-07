@@ -5,13 +5,13 @@ import java.net.Socket;
 import java.io.OutputStream;
 import java.io.InputStream;
 
-public class HttpHeaderClient {
+public class Q1 {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("www.google.com", 80);
 
         //Sending request
         OutputStream out=socket.getOutputStream();
-        out.write("GET / HTTP/1.1\r\n".getBytes());
+        out.write("HEAD / HTTP/1.1\r\n".getBytes());
         out.write("Host: www.google.com\r\n".getBytes());
         out.write("\r\n".getBytes());
 
@@ -25,9 +25,11 @@ public class HttpHeaderClient {
 
         String line;
         while ((line = reader.readLine()) != null) {
-
-            System.out.println(line);
+            //if (line.startsWith("Set-Cookie:")) {
+                System.out.println(line);
+            //}
         }
         socket.close();
+
     }
 }
