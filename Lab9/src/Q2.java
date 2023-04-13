@@ -1,49 +1,42 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.Socket;
+import java.io.OutputStream;
+import java.io.InputStream;
 
 public class Q2 {
-    public static void main(String[] args) throws Exception {
-        String urlString = "https://www.takearidewith.me/";
-        HttpURLConnection connection = null;
-        int responseCode;
-        String locationHeader;
+    public static void main(String[] args) throws IOException {
+        Socket socket = new Socket("www.facebook.com", 80);
+        int headers = 0;
+        int words = 0;
+        int chars = 0;
 
-        do {
-            URL url = new URL(urlString);
-            connection = (HttpURLConnection) url.openConnection();
-            responseCode = connection.getResponseCode();
-            locationHeader = connection.getHeaderField("Location");
+        OutputStream out = socket.getOutputStream();
+        out.write("HEAD / HTTP/1.1\r\n".getBytes());
+        out.write("Host: www.facebook.com\r\n".getBytes());
+        out.write("\r\n".getBytes());
 
-            if (responseCode == HttpURLConnection.HTTP_MOVED_PERM ||
-                    responseCode == HttpURLConnection.HTTP_MOVED_TEMP) {
-                urlString = locationHeader;
-            }
-        } while (responseCode == HttpURLConnection.HTTP_MOVED_PERM ||
-                responseCode == HttpURLConnection.HTTP_MOVED_TEMP);
+        InputStream in = socket.getInputStream();
+        InputStreamReader inreader = new InputStreamReader(in);
+        BufferedReader reader = new BufferedReader(inreader);
 
-        connection.disconnect();
-
-        connection = (HttpURLConnection) new URL(urlString).openConnection();
-        connection.setRequestMethod("GET");
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String inputLine;
-        StringBuffer content = new StringBuffer();
-        while ((inputLine = in.readLine()) != null) {
-            content.append(inputLine);
-            content.append("\n");
+        String line;
+        reader.readLine();
+        while (!(line = reader.readLine()).isBlank()) {
+            headers++;
+            chars += line.length();
+            String[] lineWords = line.split("\\s+");
+            words += lineWords.length;
+            System.out.println(line);
         }
+        System.out.println("Number of headers: " + headers);
+        System.out.println("Number of words: " + words);
+        System.out.println("Number of characters: " + chars);
+        socket.close();
+        reader.close();
+        inreader.close();
         in.close();
-
-        System.out.println("HTTP Headers:");
-        connection.getHeaderFields().forEach((key, values) -> {
-            System.out.println(key + ": " + values);
-        });
-        System.out.println("\nResponse Body:");
-        System.out.println(content.toString());
-        connection.disconnect();
-
+        out.close();
     }
 }
